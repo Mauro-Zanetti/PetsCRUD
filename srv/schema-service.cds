@@ -5,6 +5,6 @@ service CatalogService  {
     entity Vets as projection on PetShop.Vets;
     entity Owners as projection on PetShop.Owners;
 
-    action TestAction(name: String) returns String;
+    action TestAction(name: String, last: String, ID : Integer) returns String;
     function TestFunction(name: String) returns String;
 }
